@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    }
+    /* Style the body */
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    }
+    /* Header/logo Title */
+    .header { 
+    image-o: center;
+    padding: 30px;
+    text-align: center;
+    background: #0b010f;
+    color: rgb(201, 44, 248);
+    }
+    /* Increase the font size of the heading */
+    .header h1 {
+    font-size: 40px;
+    }
+    .header img {
+        float: left;
+        margin: 0px 30px;
+    }
+
+    /* Style the top navigation bar */
+    .navbar {
+    overflow: hidden;
+    background-color: #22f51a;
+    }
+    /* Style the navigation bar links */
+    .navbar a {
+    float: left;
+    display: block;
+    color: rgb(17, 12, 5);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: rgb(251, 255, 20);
+    }
+    /* Right-aligned link */
+    .navbar a.right {
+    float: right;
+    }
+    /* Change color on hover */
+    .navbar a:hover {
+    background-color: #ecff42;
+    color: black;
+    }
+    /* Column container */
+    .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    }
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #ecd718;
+    padding: 20px;
+    }
+    /* Main column */
+    .main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: rgb(219, 219, 219);
+    padding: 20px;
+    }
+    /* Fake image, just for this example */
+    .fakeimg {
+    background-color: #f2f5f8;
+    width: 100%;
+    padding: 20px;
+    }
+    /* Footer */
+    .footer {
+    padding: 20px;
+    text-align: center;
+    background: #6a32ec;
+    }
+    /* Responsive layout - when the screen is less than 700px wide, make the two
+    columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+    .row {
+    flex-direction: column;
+    }
+    }
+    /* Responsive layout - when the screen is less than 400px wide, make the nav
+    igation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+    .navbar a {
+    float: none;
+    }
+    }
